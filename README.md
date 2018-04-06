@@ -6,12 +6,6 @@ Vagrant Box for Pimcore Demo Ecommerce
 vagrant up
 ```
 
-## Run installation script
-
-```bash
-sudo /var/www/pimcore/bin/install pimcore:install --ignore-existing-config
-```
-
 ## Run on your host machine. Add virtual host domain
 
 ```bash
