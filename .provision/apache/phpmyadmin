@@ -1,0 +1,4 @@
+<VirtualHost *:80>
+    DocumentRoot "/var/www/phpmyadmin"
+    ServerName phpmyadmin.pimcore.az
+</VirtualHost>

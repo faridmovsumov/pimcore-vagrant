@@ -1,0 +1,6 @@
+Projects/*
+!Projects/.gitkeep
+.vagrant
+.idea
+.DS_Store
+
