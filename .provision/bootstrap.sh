@@ -136,6 +136,9 @@ echo '/var/www/pimcore/vendor/pimcore/demo-ecommerce/dump/data/* rw,' >> /etc/ap
 echo '}' >> /etc/apparmor.d/usr.sbin.mysqld
 sudo /etc/init.d/apparmor reload
 
+/var/www/pimcore/bin/install pimcore:install --profile pimcore/demo-ecommerce --admin-username admin --admin-password admin --mysql-username root --mysql-password root --mysql-database pimcore --no-interaction --ignore-existing-config
+
+
 echo "+---------------------------------------------------------+"
 echo "|                      S U C C E S S                      |"
 echo "+---------------------------------------------------------+"
