@@ -19,4 +19,5 @@ sudo vi /etc/hosts
 ```
 
 > 192.168.33.56   pimcore.az
+
 > 192.168.33.56   phpmyadmin.pimcore.az
