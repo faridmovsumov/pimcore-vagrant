@@ -26,3 +26,13 @@ vi /etc/php/7.0/apache2/php.ini
 ```bash
 sudo service apache2 restart
 ```
+
+## Change Session Save Path Location
+
+Set sessiton save path in config/config.yml:
+
+> save_path: /var/lib/php/sessions
+
+## Disable AdvancedObjectSearchBundle Extension
+
+> Tools -> Extensions
