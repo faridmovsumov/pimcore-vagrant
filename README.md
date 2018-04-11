@@ -29,7 +29,7 @@ sudo service apache2 restart
 
 ## Change Session Save Path Location
 
-Set sessiton save path in config/config.yml:
+Set session save path in config/config.yml:
 
 > save_path: /var/lib/php/sessions
 
