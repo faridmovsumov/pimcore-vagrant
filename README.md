@@ -29,10 +29,23 @@ sudo service apache2 restart
 
 ## Change Session Save Path Location
 
-Set sessiton save path in config/config.yml:
+Set session save path in config/config.yml:
 
 > save_path: /var/lib/php/sessions
 
 ## Disable AdvancedObjectSearchBundle Extension
 
+You may get some errors related to ElasticSearch indexing. 
+You can prevent that by disabling AdvancedObjectSearchBundle
+
+1) You can disable it from Admin Interface
+
 > Tools -> Extensions
+
+2) You can also disable it in config file
+
+> /var/config/extensions.php 
+
+```php
+"AdvancedObjectSearchBundle\\AdvancedObjectSearchBundle" => FALSE,
+```
