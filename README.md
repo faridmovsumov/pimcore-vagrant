@@ -27,25 +27,13 @@ vi /etc/php/7.0/apache2/php.ini
 sudo service apache2 restart
 ```
 
-## Change Session Save Path Location
+## Session configuration 
 
-Set session save path in config/config.yml:
-
-> save_path: /var/lib/php/sessions
-
-## Disable AdvancedObjectSearchBundle Extension
-
-You may get some errors related to ElasticSearch indexing. 
-You can prevent that by disabling AdvancedObjectSearchBundle
-
-1) You can disable it from Admin Interface
-
-> Tools -> Extensions
-
-2) You can also disable it in config file
-
-> /var/config/extensions.php 
+For Vagrant create session.yml under app/config/local/ directory and put following code
 
 ```php
-"AdvancedObjectSearchBundle\\AdvancedObjectSearchBundle" => FALSE,
+framework:
+    session:
+        # http://symfony.com/doc/3.4/session/sessions_directory.html
+        save_path: /tmp/pimcore/var/sessions
 ```
