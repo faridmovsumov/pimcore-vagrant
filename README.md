@@ -12,9 +12,9 @@ vagrant up
 sudo vi /etc/hosts
 ```
 
-> 192.168.33.56   pimcore.az
+> 192.168.33.59   pimcore72.az
 
-> 192.168.33.56   phpmyadmin.pimcore.az
+> 192.168.33.59   phpmyadmin.pimcore72.az
 
 ## Optional Configurations
 

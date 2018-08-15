@@ -9,7 +9,7 @@
 </Directory>
 <VirtualHost *:80>l
     DocumentRoot "/var/www/pimcore/web"
-    ServerName pimcore.az
+    ServerName pimcore72.az
 </VirtualHost>
 <Directory "/var/www/pimcore/web">
     Require all granted
